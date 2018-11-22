@@ -27,6 +27,7 @@ class HomeFragment : Fragment()
         {
             audio!!.pause()
             audio!!.stop() //destroi a referencia do val audio
+            //onCompletion audio!!.release()
         }
 
         val audioManager : AudioManager = context!!.getSystemService(Context.AUDIO_SERVICE) as AudioManager//getSystemService(Context.AUDIO_SERVICE) as AudioManager
