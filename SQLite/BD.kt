@@ -8,7 +8,7 @@ import android.util.Log
 import java.lang.Exception
 
 
-class DB (context: Context) : SQLiteOpenHelper(context, "dbExemplo", null, 3)
+class DB (context: Context) : SQLiteOpenHelper(context, "dbExemplo", null, 1)
 {
     override fun onCreate(db: SQLiteDatabase?)
     {
