@@ -50,6 +50,15 @@ class MainActivity : AppCompatActivity()
                     }
                 }
             }
+            
+            override fun onDataChange(p0: DataSnapshot) //pegar childrens de um diretorio
+            {
+                val dias = p0.children
+
+                dias.forEach{
+                    Log.i("TESTE", it.key)
+                }
+            }
 
             override fun onCancelled(p0: DatabaseError)
             {
