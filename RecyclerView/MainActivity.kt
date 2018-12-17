@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity()
         nomes.add("TESTE4")
         nomes.add("TESTE5")
 
+        //adapter.notifyDataSetChanged()  **firebase atualizar adapter
+        
         recyclerFilmes.layoutManager = LinearLayoutManager(this)
         recyclerFilmes.hasFixedSize()
         recyclerFilmes.addItemDecoration(DividerItemDecoration(this, LinearLayout.VERTICAL))
